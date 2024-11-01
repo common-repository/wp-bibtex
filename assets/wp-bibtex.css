@@ -1,0 +1,66 @@
+.wpbibtex-item .bibtex,
+.wpbibtex-item-highlight .bibtex {
+    display: none;
+}
+
+.wpbibtex-item .bibtex pre,
+.wpbibtex-item-highlight .bibtex pre {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    max-width: 100%;
+    overflow: auto;
+    padding: 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.wpbibtex-item ul.inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wpbibtex-item ul.inline li {
+    display: inline-block;
+}
+
+.wpbibtex-item-highlight {
+    margin: 0 0 10px;
+}
+
+.wpbibtex-item-highlight .media {
+    position: relative;
+}
+
+.wpbibtex-item-highlight img,
+.wpbibtex-item-highlight video {
+    width: 100%;
+}
+
+.wpbibtex-item-highlight .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.wpbibtex-item-highlight .transparent {
+    opacity: 0;
+}
+
+.wpbibtex-item-highlight p {
+    margin: 10px 0;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .wpbibtex-item-highlight {
+		border-bottom: 1px dotted #999;
+		margin-bottom: 20px;
+	}
+
+	.wpbibtex-item-highlight:last-child {
+		border-bottom: none;
+	}
+}
